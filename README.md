@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/marprezd/java-lab)](https://github.com/marprezd/java-lab/stargazers)
 <img src="http://img.shields.io/liberapay/receives/maprezdev.svg?logo=liberapay">
 
-[Java Lab](https://drive.google.com/file/d/1mKNZ8UStaKw-XRbI3Q_h4p8bnbHLigmD/view?usp=sharing)
+![Java Lab](https://drive.google.com/uc?export=view&id=1mKNZ8UStaKw-XRbI3Q_h4p8bnbHLigmD)
 
 Welcome to Java Lab! A repository with some snippets of source code in Java.
 

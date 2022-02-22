@@ -15,14 +15,15 @@ public class RefrigeratorCapacity {
 
         // While loop
         while (modelName) {
-            getDetailRefrigerator();
-
             // Create a Scanner object to read input.
             Scanner input = new Scanner(System.in);
-            
+
+            getDetailRefrigerator(input);
+
             // Read a string from the keyboard.
             System.out.print("Do you want to add another refrigerator model?' (y/Y=yes, N=no) >> ");
             String confirmNextStep = input.next();
+
             // ...Use the String class’s charAt method to extract the first character of the
             // string and assign it to the answer variable.
             char answer = confirmNextStep.charAt(0);
@@ -35,11 +36,11 @@ public class RefrigeratorCapacity {
                 modelName = false;
             }
         }
-        // call to function
+        // Finish job
         endOfJob();
     }
 
-    public static void getDetailRefrigerator() {
+    public static void getDetailRefrigerator(Scanner input) {
         /**
          * getDetailRefrigerator() prompts the user for a refrigerator model name and
          * the interior height, width, and depth in inches. Then call the
@@ -52,9 +53,6 @@ public class RefrigeratorCapacity {
         String refrigeratorDepth = "Enter the interior depth (in inches) >> ";
         String refrigeratorWeight = "Enter the interior weight (in inches) >> ";
         double height, depth, weight;
-
-        // Create a Scanner object to read input.
-        Scanner input = new Scanner(System.in);
 
         System.out.print(refrigeratorModelName);
         refrigeratorModel = input.nextLine();
@@ -71,9 +69,7 @@ public class RefrigeratorCapacity {
         System.out.print(refrigeratorDepth);
         depth = input.nextDouble();
         System.out.println("Value entered: " + depth);
-        //input.close();
 
-        // call to function
         calculateRefrigeratorCapacity(height, weight, depth);
     }
 
